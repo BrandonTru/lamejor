@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../imagenes/proximamente.gif");
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: sans-serif;
+}
+
+
+
+.container {
+    text-align: center;
+    background-color: #00FF0000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: 2.5em;
+    margin: 0 10px;
+    color: #ffffff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+span {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+#message {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+    .countdown {
+        flex-direction: column;
+    }
+
+    .time {
+        font-size: 2em;
+    }
+}
